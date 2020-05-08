@@ -152,7 +152,7 @@ namespace Minesweeper
             }
 
             Random r = new Random();
-            for(int i = 0; i < cells.Count; i++)
+            for(int i = 0; i < cells.Count * 10; i++)
             {
                 int a = r.Next(0, cells.Count), b = r.Next(0, cells.Count);
                 (cells[a], cells[b]) = (cells[b], cells[a]);
