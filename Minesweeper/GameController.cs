@@ -190,11 +190,11 @@ namespace Minesweeper
             foreach(Mine mine in Mines)
             {
                 mine.Reset();
-                cellsLeft = Mines.GetLength(0) * Mines.GetLength(1) - MinesCount;
-                FlagsCount = 0;
-                Time = 0;
-                timeLabel.Text = "00:00";
             }
+            timer.Enabled = false;
+            cellsLeft = Mines.GetLength(0) * Mines.GetLength(1) - MinesCount;
+            FlagsCount = 0;
+            Time = 0;
         }
         public void SetFlags(int value)
         {
